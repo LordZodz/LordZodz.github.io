@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./resources/css/css_cheatsheet.css">
+        <title>CSS Cheatsheet</title>
+    </head>
+    <body>
+        <!-- Title -->
+        <header>
+            <h1>CSS Selectors and Specificity Reference</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- CSS Selectors section -->
+            <section>
+                <h2>CSS Selectors</h2>
+                <table>
+                    <!-- Table Heading -->
+                    <thead>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                        <!-- First Row -->
+                        <tr>
+                            <td class="selector">a[title]</td>
+                            <td class="selector-name">Attribute</td>
+                            <td>Matches elements based on the presence or value of a given attribute.</td>
+                        </tr>
+                        <!-- Second Row -->
+                        <tr>
+                            <td class="selector">.spacious</td>
+                            <td class="selector-name">Class</td>
+                            <td>Matches elements based on the contents of their class attribute.</td>
+                        </tr>
+                        <!-- Third Row -->
+                        <tr>
+                            <td class="selector">#demo</td>
+                            <td class="selector-name">ID</td>
+                            <td>matches an element based on the value of the element's id attribute. 
+                                In order for the element to be selected, its id attribute must match 
+                                exactly the value given in the selector.</td>
+                        </tr>
+                        <!-- Fourth Row -->
+                        <tr>
+                            <td class="selector">body</td>
+                            <td class="selector-name">Type</td>
+                            <td>Matches elements by node name. In other words, it selects all elements 
+                                of the given type within a document.</td>
+                        </tr>
+                        <!-- Fifth Row -->
+                        <tr>
+                            <td class="selector">*</td>
+                            <td class="selector-name">Universal</td>
+                            <td>Matches elements of any type.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!-- CSS Specificity Section -->
+            <section>
+                <h2>CSS Specificity</h2>
+                <p>The table below shows the order of selector weight categories in decreasing specificity</p>
+                <table>
+                    <!-- Table Heading -->
+                    <thead>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                        <!-- First Row -->
+                        <tr>
+                            <td class="selector">ID</td>
+                            <td>Includes only ID selectors. They have the highest specificity.</td>
+                        </tr>
+                        <!-- Second Row -->
+                        <tr>
+                            <td class="selector">Class</td>
+                            <td>Includes Class, certain attribute selectors, and Pseudo-Class selectors.
+                                They have the second highest specificity.
+                            </td>
+                        </tr>
+                        <!-- Third Row -->
+                        <tr>
+                            <td class="selector">Type</td>
+                            <td>Includes Type elements and Pseudo-Type elements. They have the third highest specificity.</td>
+                        </tr>
+                        <!-- Fourth Row -->
+                        <tr>
+                            <td class="selector">No value</td>
+                            <td>Includes the Universal selector. This selector does not impact the specificity.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>
